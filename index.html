@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHINNU | Birthday Memories</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="dinu.css">
+</head>
+<body>
+  <div class="ambient-glow"></div>
+  <section class="start-screen" id="startScreen" aria-label="Start birthday celebration">
+    <div class="start-card">
+      <div class="start-balloons" aria-hidden="true">🎈 ✨ 🎈</div>
+      <p class="start-kicker">A little surprise is waiting</p>
+      <h1>Ready, Chinnu? 💖</h1>
+      <p class="start-copy">Tap once to begin your birthday celebration.</p>
+      <button class="start-button" id="startButton" type="button">
+        <span>Let's Celebrate</span><span class="start-button-icon">🎉</span>
+      </button>
+      <p class="start-hint">Music and memories will start together</p>
+    </div>
+    <div class="fireworks-preview" aria-hidden="true"><i></i><i></i><i></i></div>
+  </section>
+  <main class="container" aria-label="Birthday slideshow">
+    <div class="main-message theme-welcome" id="mainMessage" aria-live="polite"></div>
+    <div class="slide" aria-label="Nine photo cards">
+      <section class="item theme-welcome" data-image="Assets/Image/slide-01.jpg" style="--card-image: url('Assets/Image/slide-01.jpg');">
+        <div class="content">
+          <div class="eyebrow">A little celebration for you</div>
+          <div class="name"></div>
+          <div class="des">Wishing you all the best for your future endeavors.</div>
+          <button>I'm Feeling Lucky To Have You</button>
+        </div>
+      </section>
+      <section class="item theme-birthday" data-image="Assets/Image/slide-02.jpg" style="--card-image: url('Assets/Image/slide-02.jpg');">
+        <div class="content">
+          <div class="eyebrow">Today is all about you</div>
+          <div class="name">HAPPIEST BIRTHDAY THULASI (CHINNU)💖</div>
+          <div class="des">Wish U Many More Happy Returns Of The Day My Special One✨</div>
+          <button>🎂🎂</button>
+        </div>
+      </section>
+      <section class="item theme-friendship" data-image="Assets/Image/slide-03.jpg" style="--card-image: url('Assets/Image/slide-03.jpg');">
+        <div class="content">
+          <div class="eyebrow">A bond I treasure</div>
+          <div class="name">FRIENDSHIP</div>
+          <div class="des">When you go through a hard time, a real friend steps up and supports you with the fierce loyalty of a sibling.</div>
+          <button>U R MY BEST SUPPORTER EVER🫶</button>
+        </div>
+      </section>
+      <section class="item theme-time" data-image="Assets/Image/slide-04.jpeg" style="--card-image: url('Assets/Image/slide-04.jpeg');">
+        <div class="content">
+          <div class="eyebrow">Moments worth keeping</div>
+          <div class="name">TIME</div>
+          <div class="des">I Wish I Could Turn Back Time And Relive All The Moments We Shared</div>
+          <button>Missing U More</button>
+        </div>
+      </section>
+      <section class="item theme-dreams" data-image="Assets/Image/slide-05.jpg" style="--card-image: url('Assets/Image/slide-05.jpg');">
+        <div class="content">
+          <div class="eyebrow">Keep reaching higher</div>
+          <div class="name">STEPPING AHEAD</div>
+          <div class="des">I'm Waiting For The Day To See your Goal Successfully Achieved and Becoming What You Wish.</div>
+          <button>My Chinnu And My Strength</button>
+        </div>
+      </section>
+      <section class="item theme-happiness" data-image="Assets/Image/slide-06.jpg" style="--card-image: url('Assets/Image/slide-06.jpg');">
+        <div class="content">
+          <div class="eyebrow">You make life brighter</div>
+          <div class="name">HAPPINESS</div>
+          <div class="des">Thank You So Much For Always Being There For Me And Making Me Happy</div>
+          <button>Thank You 💞</button>
+        </div>
+      </section>
+      <section class="item theme-bestie" data-image="Assets/Image/slide-07.jpg" style="--card-image: url('Assets/Image/slide-07.jpg');">
+        <div class="content">
+          <div class="eyebrow">A friendship close to my heart</div>
+          <div class="name">MY FOREVER BESTIE 💗</div>
+          <div class="des">Some friendships make life more beautiful. You're one of those special people I'll always be grateful for.</div>
+          <button>Always My Person 🫶</button>
+        </div>
+      </section>
+      <section class="item theme-soul" data-image="Assets/Image/slide-08.jpg" style="--card-image: url('Assets/Image/slide-08.jpg');">
+        <div class="content">
+          <div class="eyebrow">Never change your sparkle</div>
+          <div class="name">A BEAUTIFUL SOUL ✨</div>
+          <div class="des">Your smile, kindness and crazy little moments make every memory unforgettable. Never stop being you!</div>
+          <button>Keep Shining, Chinnu 🌷</button>
+        </div>
+      </section>
+      <section class="item theme-memories" data-image="Assets/Image/slide-09.jpg" style="--card-image: url('Assets/Image/slide-09.jpg');">
+        <div class="content">
+          <div class="eyebrow">Here's to everything ahead</div>
+          <div class="name">MORE MEMORIES AHEAD 🥂</div>
+          <div class="des">This is not just a birthday wish. It's a promise for many more laughs, memories and beautiful moments together.</div>
+          <button>To Many More Years 💞</button>
+        </div>
+      </section>
+    </div>
+    <div class="button controls" aria-label="Manual slide controls">
+      <button class="prev" aria-label="Previous slide"><i class="fa-solid fa-arrow-left"></i></button>
+      <button class="next" aria-label="Next slide"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div class="progress-track"><div class="progress-fill"></div></div>
+    <div class="slide-counter" aria-live="polite">01 / 09</div>
+    <div class="sound-note" role="status">Press “Let’s Celebrate” to start the music and slideshow together.</div>
+  </main>
+
+  <audio id="songOne" src="Assets/Audio/song-1.mpeg" preload="auto" loop></audio>
+  <audio id="songTwo" src="Assets/Audio/adiye.mp3" preload="auto" loop></audio>
+  <div class="confetti-layer" aria-hidden="true"></div>
+  <script src="dinu.js"></script>
+</body>
+</html>
